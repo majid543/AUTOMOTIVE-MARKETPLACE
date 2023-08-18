@@ -1,0 +1,30 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Load Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>AUTOMOTIVE MARKETPLACE</title>
+</head>
+<body>
+    {% include 'showroom/header.html' %}
+    <style>
+        body {
+            background-color: #f5f2f2; /* Replace with your desired grey color */
+        }
+    </style>
+    
+    <p></p>
+    
+    <main role="main" class="container">
+        {% block content %}{% endblock %}
+    </main>
+
+
+    
+    <!-- Load Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
